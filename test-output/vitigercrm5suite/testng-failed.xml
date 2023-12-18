@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [vitigercrm5suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MarketingSuite(failed)">
+    <classes>
+      <class name="org.eva.vtigercrm5automaion.testscripts.TestTestNGFeatures">
+        <methods>
+          <include name="methodSix"/>
+        </methods>
+      </class> <!-- org.eva.vtigercrm5automaion.testscripts.TestTestNGFeatures -->
+    </classes>
+  </test> <!-- MarketingSuite(failed) -->
+</suite> <!-- Failed suite [vitigercrm5suite] -->

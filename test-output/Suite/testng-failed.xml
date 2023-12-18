@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts">
+        <methods>
+          <include name="verifyVT001CreateAccount"/>
+        </methods>
+      </class> <!-- org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts -->
+      <class name="org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts">
+        <methods>
+          <include name="verifyVT0010AccountAndContactAddOnInvoiceForm"/>
+        </methods>
+      </class> <!-- org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts -->
+      <class name="org.eva.vtigercrm5.salestestscripts.SalesLeadsTestScripts">
+        <methods>
+          <include name="verifyVT006SearchLeads"/>
+        </methods>
+      </class> <!-- org.eva.vtigercrm5.salestestscripts.SalesLeadsTestScripts -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
