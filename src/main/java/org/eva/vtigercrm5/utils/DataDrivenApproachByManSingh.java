@@ -50,7 +50,9 @@ public class DataDrivenApproachByManSingh {
 		}
 		return dim2Arr;
 	}
-
+	
+	// the below method is used to find out all the data in a List that have Map data
+	// in the form of key-value pair with the help of sheet name and testcase id.
 	public List<Map<String, String>> getAllTestCaseData(String sheetName, String testCaseId)
 			throws FileNotFoundException {
 		FileInputStream fis = new FileInputStream("src\\test\\resources\\formData.xlsx");
@@ -96,7 +98,7 @@ public class DataDrivenApproachByManSingh {
 	}
 
 	/// below lines will search for testcase id in data sheet
-	/// and will give row number where data exist
+	/// and will give all row number in a list where data exist
 	public List<Integer> getAllRowNumbersByTestCaseID(Sheet sheetObj, String TestCaseID) {
 		List<Integer> allTcRowNumbers = new ArrayList<Integer>();
 		for (int i = 1; i <= sheetObj.getLastRowNum(); i++) {

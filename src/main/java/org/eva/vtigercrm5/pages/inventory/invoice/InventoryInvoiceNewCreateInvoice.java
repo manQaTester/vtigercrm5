@@ -30,7 +30,7 @@ public  class InventoryInvoiceNewCreateInvoice  extends InventoryInvoiceNewCreat
 		webtl.clear(getBillingAddressTB());
 		webtl.sendKeys(getBillingAddressTB(),testcaseDataMap.get("Address"));
 		webtl.clear(getBillPoBoxTB());
-		webtl.sendKeys(getBillPoBoxTB(),"city");
+		webtl.sendKeys(getBillPoBoxTB(),testcaseDataMap.get("city"));
 		webtl.clear(getBillCityTB());
 		webtl.sendKeys(getBillCityTB(), "kaushambi");
 		webtl.clear(getBillStateTB());

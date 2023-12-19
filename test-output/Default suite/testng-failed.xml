@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.eva.vtigercrm5.core.DataProviderConcept">
+      <class name="org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts">
         <methods>
-          <include name="checkData"/>
+          <include name="verifyVT0010AccountAndContactAddOnInvoiceForm"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTestCases"/>
         </methods>
-      </class> <!-- org.eva.vtigercrm5.core.DataProviderConcept -->
+      </class> <!-- org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
