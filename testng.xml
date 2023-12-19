@@ -21,11 +21,11 @@
 		<!-- </packages> -->
 		<classes>
 			<class
-			name="org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts" 
+			name="org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts" 
 				>
-				<methods>
-				<include name="verifyVT001CreateAccount"></include>
-				</methods>
+<!-- 				<methods> -->
+<!-- 				<include name="verifyVT001CreateAccount"></include> -->
+<!-- 				</methods> -->
 				 </class>
 <!-- 			<class	name="org.eva.vtigercrm5.salestestscripts.SalesLeadsTestScripts"> 
 				<methods>

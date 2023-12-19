@@ -6,20 +6,19 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="userName" value="admin"/>
     <classes>
-      <class name="org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts">
+      <class name="org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts">
         <methods>
+          <include name="verifyVT0010AccountAndContactAddOnInvoiceForm"/>
           <include name="afterTest"/>
-          <include name="verifyVT001CreateAccount"/>
           <include name="beforeSuite"/>
-          <include name="beforeGroups"/>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
           <include name="afterClass"/>
           <include name="beforeTestCases"/>
         </methods>
-      </class> <!-- org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts -->
+      </class> <!-- org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [vtigercrm5suite] -->

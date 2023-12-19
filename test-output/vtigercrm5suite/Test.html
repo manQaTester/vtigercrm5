@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 17 07:20:52 IST 2023</td>
+<td>Started on:</td><td>Tue Dec 19 00:44:57 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16505 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3883 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,76 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts<br>Parameters: admin, admin, public void org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.verifyVT001CreateAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.beforeTestCases()'><b>beforeTestCases</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts<br>Parameters: chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1843459456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1843459456'><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443721024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443721024'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
@@ -163,8 +110,8 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>2</td>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -175,35 +122,50 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.afterClass()'><b>afterClass</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.afterClass()'><b>afterClass</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts</td>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
 <td></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
+<tr>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
+<td></td>
+<td>0</td>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
+<tr>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.beforeMethod()'><b>beforeMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
+<td></td>
+<td>0</td>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
+<tr>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.afterMethod()'><b>afterMethod</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts</td>
+<td></td>
+<td>0</td>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -214,76 +176,23 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.verifyVT001CreateAccount()'><b>verifyVT001CreateAccount</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts<br>Parameters: 9835737634, pluse, a telephonic, man@gmail.com, kaushambi, utter pradesh, 212214, India, work while you work </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.verifyVT0010AccountAndContactAddOnInvoiceForm()'><b>verifyVT0010AccountAndContactAddOnInvoiceForm</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts<br>Parameters: {pincode=234244, Address=Sant Ravidas nagar bhadohi, city=jaunpur, FirstName=Man, district=varanasi, Country=India, state=Uttar Pradesh}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429462130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1429462130'><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293465402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293465402'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
@@ -302,78 +211,25 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.verifyVT001CreateAccount()'><b>verifyVT001CreateAccount</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts<br>Parameters: 6335737634, circle, marketing, shiv@gmail.com, meza, utter pradesh, 212206, India, work while you work </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.verifyVT0010AccountAndContactAddOnInvoiceForm()'><b>verifyVT0010AccountAndContactAddOnInvoiceForm</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts<br>Parameters: {pincode=234244, Address=Sant Ravidas nagar bhadohi, city=varanasi, FirstName=Man, district=varanasi, Country=India, state=Uttar Pradesh}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace101740901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace101740901'><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406221524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406221524'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
@@ -392,78 +248,25 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 <tr>
-<td title='org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts.verifyVT001CreateAccount()'><b>verifyVT001CreateAccount</b><br>Test class: org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts<br>Parameters: 8135737634, tringle,  sales, virendra@gmail.com, bhadohi, utter pradesh, 212244, India, work while you work </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.verifyVT0010AccountAndContactAddOnInvoiceForm()'><b>verifyVT0010AccountAndContactAddOnInvoiceForm</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts<br>Parameters: {pincode=221406, Address=Sant Ravidas nagar bhadohi, city=Bhadohi, FirstName=Man, district=Bhadohi, Country=India, state=Uttar Pradesh}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179233442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace179233442'><pre>org.openqa.selenium.WebDriverException: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
-  (Session info: chrome=119.0.6045.160)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91ec963230ffea4904fbb0f15bd12ca4, findElement {using=xpath, value=//input[@name=&apos;user_name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\MANSIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56899/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91ec963230ffea4904fbb0f15bd12ca4
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getAccessibleName(Unknown Source)
-	at org.eva.vtigercrm5.utils.WebUtil.clear(WebUtil.java:1484)
-	at org.eva.vtigercrm5.pages.common.CommonCodes.login(CommonCodes.java:18)
-	at org.eva.vtigercrm5.core.BaseTest.beforeMethod(BaseTest.java:69)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace408388753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace408388753'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
@@ -482,7 +285,44 @@ Session ID: 91ec963230ffea4904fbb0f15bd12ca4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts@1fa121e2</td></tr>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
+<tr>
+<td title='org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts.verifyVT0010AccountAndContactAddOnInvoiceForm()'><b>verifyVT0010AccountAndContactAddOnInvoiceForm</b><br>Test class: org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts<br>Parameters: {pincode=234244, Address=Sant Ravidas nagar bhadohi, city=allahabad, FirstName=Man, district=varanasi, Country=India, state=Uttar Pradesh}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277882374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277882374'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at org.eva.vtigercrm5.utils.WebUtil.openUrl(WebUtil.java:594)
+	at org.eva.vtigercrm5.core.BaseTest.beforeTestCases(BaseTest.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.eva.vtigercrm5.inventorytestscripts.InventryInvoiceTestScripts@3bf7ca37</td></tr>
 </table><p>
 </body>
 </html>
