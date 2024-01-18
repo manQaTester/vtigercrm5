@@ -10,6 +10,8 @@ private WebUtil webtl;
 	public CommonCodes(WebUtil webtl) {
 		super(webtl);
 		this.webtl=webtl;
+		System.out.println("hi");
+		System.out.println("bi");
 	}
 
 	public void login(String userName,String password) {
